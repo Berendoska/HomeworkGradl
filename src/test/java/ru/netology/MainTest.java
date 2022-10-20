@@ -1,8 +1,8 @@
 package ru.netology;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.*;
 
 public class MainTest {
 
@@ -51,7 +51,7 @@ public class MainTest {
         Main bonusServiceHome = new Main();
         int amount = 1000;
         int actual =  bonusServiceHome.remain(amount);
-        int expected = 1000;
+        int expected = 0;
 
         assertEquals(actual, expected); //операция сравнения
     }
